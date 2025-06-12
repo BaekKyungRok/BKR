@@ -34,6 +34,13 @@
   }
   mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
 
+  
+  const toggle = document.querySelector('.mobile-nav-toggle');
+  const nav = document.getElementById('navmenu');
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('mobile-nav-active');
+  });
+
   /**
    * Hide mobile nav on same-page/hash links
    */

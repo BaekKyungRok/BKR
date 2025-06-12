@@ -151,8 +151,17 @@ h6 {
   border-bottom: 1px solid var(--background-color);
 }
 
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
 .header .logo {
   line-height: 1;
+  position: absolute;
+  left: 1rem;
 }
 
 .header .logo img {
@@ -190,6 +199,10 @@ h6 {
 
 .header .header-social-links a i {
   line-height: 0px;
+}
+
+.mobile-nav-toggle {
+  display: none;
 }
 
 @media (max-width: 1200px) {
@@ -335,6 +348,11 @@ h6 {
 
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
+  
+  .header .container {
+    justify-content: flex-start;
+  }
+
   .mobile-nav-toggle {
     color: var(--nav-color);
     font-size: 28px;
@@ -342,6 +360,11 @@ h6 {
     margin-right: 10px;
     cursor: pointer;
     transition: color 0.3s;
+    display: block;
+    position: absolute;
+    right: 1rem;
+    font-size: 1.75rem;
+    cursor: pointer;
   }
 
   .navmenu {
@@ -361,6 +384,17 @@ h6 {
     transition: 0.3s;
     z-index: 9998;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .navmenu.mobile-nav-active ul {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    background-color: var(--nav-mobile-background-color);
+    padding: 1rem;
+    border-radius: 6px;
+    /* 필요시 width와 높이 조절 */
   }
 
   .navmenu a,
