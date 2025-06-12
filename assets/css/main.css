@@ -143,19 +143,12 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  position: relative;
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
   border-bottom: 1px solid var(--background-color);
-}
-
-.navmenu {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .header .logo {
