@@ -162,6 +162,10 @@ h6 {
   line-height: 1;
   position: absolute;
   left: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
 }
 
 .header .logo img {
@@ -177,8 +181,12 @@ h6 {
 }
 
 .header .logo i {
-  font-size: 28px;
+  font-size: 1.8rem;
   margin-right: 6px;
+}
+
+.logo-text {
+  font-family: inherit;
 }
 
 .header .header-social-links {
